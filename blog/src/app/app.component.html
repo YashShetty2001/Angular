@@ -1,0 +1,6 @@
+<h1>{{title}} </h1>
+<input type="text" #box  placeholder="enter name" name="name">
+<button (click)="getvalue(box.value)">click </button>
+<p style="font-size: 20px;">
+    The Entered value is: {{displayvalue}}
+</p>
