@@ -1,6 +1,5 @@
 <h1 class="heading">{{title}} </h1>
-<!-- highest prefernce for this styling -->
-<Style> .heading{
-    color:aqua;
-}</Style>
-<app-login></app-login>
+
+<input type="text" name="user-name" value="{{name}}" disabled="{{disable}}">
+<br>
+<input type="text" name="user-name" [value]=name [disabled]=disable>

@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Basic Style in Angular';
-  
+  title = 'Property binding';
+  name="Yash";
+  disable=false;
   
 }
