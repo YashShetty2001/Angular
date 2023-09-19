@@ -1,0 +1,15 @@
+<h1>Hello angular {{title}} </h1>
+<app-login></app-login>
+<button (click)="getName('Yash')">"Click me"</button>
+<button (click)="getdata('yash')" >"Call Function"</button>
+\<br>
+<input type="text" #val (keyup)="getdata(val.value)" placeholder="event keyup">
+<br>
+<input type="text" #val2 (keydown)="getdata(val2.value)" placeholder="event keydown">
+<br>
+<input type="text" #val3 (blur)="getdata(val3.value)" placeholder="event blur">
+<br>
+<input type="text" #val4 (input)="getdata(val4.value)" placeholder="event input">
+
+<h1 (mouseover)="getdata('over')"> "Hi you are over me"</h1>
+<h1 (mouseleave)="getdata('leave')"> "Hi you are leaving me"</h1>
