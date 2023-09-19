@@ -1,5 +1,6 @@
-# Angular
-
+# Angular:
+<br>
+Author: Yash Shetty
 Welcome to the Angular Repository! This repository is your one-stop destination for all things Angular. Angular is a powerful and popular open-source web application framework maintained by Google and a community of developers. Whether you're a seasoned Angular pro or just getting started with web development, you'll find valuable resources, code samples, and project templates here.
 <br>
 Key Features and Highlights:
