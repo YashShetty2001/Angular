@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {UserAuthModule} from './user-auth/user-auth.module'
+
 import { AppComponent } from './app.component';
 
 
@@ -13,7 +13,7 @@ import { AppComponent } from './app.component';
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
-        UserAuthModule
+        
     ]
 })
 export class AppModule { }

@@ -6,19 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hello world';
-  data ="Code step by step ";
-  getdvalue()
-  {
-    return "Get funtion data";
-  }
-  getName(name:string)
-  {
-    alert( `hello ${name}`) ;
-    
-  }
-  getdata(val:any)
+  title = 'get input box value';
+  displayvalue:string='';
+  getvalue(val:string)
   {
     console.warn(val);
+    this.displayvalue=val;
   }
+  
 }
