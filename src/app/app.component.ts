@@ -6,13 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Nested For Loop';
-  users=['ram', 'shyam','lakshman','bharat', 'shatrungan']
-  Userlist=[
-  {name:'ram', email:'ram@test.com', phone:'8888', SocialAccounts:['gmail','insta','facebook','youtube']},
-  {name:'shyam', email:'shyam@test.com', phone:'2222', SocialAccounts:['gmail','youtube','insta','facebook','youtube']},
-  {name:'lakshman', email:'lakshman@test.com', phone:'3333', SocialAccounts:['yahoo','insta','facebook']},
-  {name:'bharat', email:'bharat@test.com', phone:'4444', SocialAccounts:['gmail','insta','facebook','youtube']},
-  {name:'shatrungan', email:'shatrungan@test.com', phone:'2222', SocialAccounts:['gmail','facebook','youtube']}
-  ]
+  title = 'Style Binding';
+  color='red';
+  bgcolor='purple';
+  counter:number=1;
+  UpdateColor(){
+    if(this.counter%2==0)
+    {
+    this.color='blue';
+    this.bgcolor='yellow';
+    }
+    else{
+      this.color='green';
+      this.bgcolor='orange';
+    }
+    this.counter++;
+  }
+  
 }
