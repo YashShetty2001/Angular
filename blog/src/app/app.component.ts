@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'get input box value';
-  displayvalue:string='';
-  getvalue(val:string)
-  {
-    console.warn(val);
-    this.displayvalue=val;
+  title = 'Toggle Element';
+  display=false;
+  toggle(){
+    this.display=!this.display;
   }
-  
+
+
 }
