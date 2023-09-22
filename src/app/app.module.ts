@@ -9,10 +9,12 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
