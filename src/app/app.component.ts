@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sending data from parent Component to child component';
-  data="x";
-  updateData(item:string)
-  {
-    console.warn(item);
-    this.data=item;
-  }
+  name:any;
 }
