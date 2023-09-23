@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Sending data from parent Component to child component';
-  getVal(item:HTMLInputElement){
-    console.warn(item);
+  title = 'Angular basic pipes';
+  today=Date();
+  item:string='';
+  toupper(item:string)
+  {
+    return item.toUpperCase();
   }
 }
