@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Sending data from parent Component to child component';
-  name:any;
+  getVal(item:HTMLInputElement){
+    console.warn(item);
+  }
 }
