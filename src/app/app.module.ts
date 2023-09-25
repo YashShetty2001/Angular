@@ -7,12 +7,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
-import { USDINRPipe } from './pipes/usdinr.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    USDINRPipe,
+   
 
   
    ],

@@ -1,2 +1,13 @@
-<h1>{{title|uppercase}}</h1>
-<h1>{{20|uSDINR: 105}}</h1>
+<h1>{{title}}</h1>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value) ">
+    <input type="text" placeholder="enter name" name="name" ngModel="">
+    <br>
+
+    <input type="text" placeholder="Enter password" name="password" ngModel>
+    <br>
+    <br>
+    <button >Login</button>
+
+</form>
+
+
