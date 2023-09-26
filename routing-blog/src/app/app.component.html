@@ -1,16 +1,10 @@
-<h1>Code Step by step</h1>
-<a routerLink="">Home</a>
-<br>
-<a routerLink="about">About</a>
-<br>
-<a routerLink="user">User</a>
+<h1>{{title}}</h1>
+<div>
+  <ul>
+    <li *ngFor="let item of userData">{{ item.name}}</li>
+  </ul>
+</div>
 
-
-<a routerLink="user/20">Anil</a>
-<br>
-<a routerLink="user/30">Bhaskar</a>
-<br>
-<a routerLink="user/40">Rohit</a>
-<br>
-<a routerLink="abc">Ram</a>
-<router-outlet></router-outlet>
+<div>
+  <app-footer></app-footer>
+</div>

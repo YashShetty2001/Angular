@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'routing-blog';
+  title = 'Services in angular';
+  userData=[
+  { name:'yash', Mail:'yash@TestBed.com'},
+  { name:'ram', Mail:'ram@TestBed.com'},
+  { name:'rohit', Mail:'rohit@TestBed.com'},
+  { name:'Shayam', Mail:'Shayam@TestBed.com'}
+
+  
+  ]
 }
