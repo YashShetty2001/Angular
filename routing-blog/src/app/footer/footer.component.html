@@ -1,3 +1,6 @@
-<div class="footer">
-    <h1>Footer</h1>
-</div>
+<p>Footer</p>
+<ul>
+    <li *ngFor="let users of data">
+        {{users.name}}: {{users.Age}}
+    </li>
+  </ul>
