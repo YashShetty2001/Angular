@@ -1,17 +1,14 @@
 import { Injectable } from '@angular/core';
-
+import {HttpClient} from '@angular/common/http'
 @Injectable({
   providedIn: 'root'
 })
 export class UserdataService {
 
-  constructor() {}
+  constructor(private http:HttpClient) {}
+   url='https://randomuser.me/api'
     users(){
-      return[
-      {name:'Anil', Age:'28', email:'anil@testbed.com'},
-      {name:'sam', Age:'25', email:'sam@testbed.com'},
-      {name:'peter', Age:'34', email:'peter@testbed.com'},
-      ]
+      return this.http.get(this.url)
     }
   }
 

@@ -7,11 +7,16 @@ import {UserdataService} from './Services/userdata.service'
 })
 export class AppComponent {
   title = 'Services in angular';
-  data:any=[];
-  constructor(private userdata:UserdataService)
-  {
-    console.warn("userdata",userdata.users);
-    this.data=userdata.users();
+  users:any;
+  constructor(private userdata:UserdataService){
+    console.warn('usedata',userdata.users());
+    this.users=userdata.users();
+    userdata.users().subscribe((data)=>{
+    console.warn('data',data);
+    this.users=data });
+
+    
+
   }
   
   

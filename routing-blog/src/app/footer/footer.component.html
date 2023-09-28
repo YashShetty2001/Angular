@@ -1,6 +1,14 @@
-<p>Footer</p>
-<ul>
-    <li *ngFor="let users of data">
-        {{users.name}}: {{users.Age}}
-    </li>
-  </ul>
+<div class="footer">
+    <p>Footer</p>
+  
+    <ul>
+      <li *ngFor="let user of users.results">
+        {{ user.id.name }}: {{ user.gender }}
+      </li>
+    </ul>
+    <ul>
+      <li *ngFor="let data of users.results">
+        {{ data.email }}
+      </li>
+    </ul>
+  </div>
