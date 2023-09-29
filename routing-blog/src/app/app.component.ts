@@ -6,7 +6,7 @@ import {UserdataService} from './Services/userdata.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Services in angular';
+  title = 'Get Data From API';
   users:any;
   constructor(private userdata:UserdataService){
     console.warn('usedata',userdata.users());
@@ -17,6 +17,14 @@ export class AppComponent {
 
     
 
+  }
+  getUsersFormData(data:any)
+  {
+    console.warn(data);
+    this.userdata.saveusers(data).subscribe((resullts)=>
+      {
+        console.warn(resullts);
+      })
   }
   
   

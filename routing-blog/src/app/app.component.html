@@ -9,4 +9,13 @@
 </ul>
 
 
+<form #usersForm="ngForm" (ngSubmit)="getUsersFormData(usersForm.value)">
+    <input type="text" name="name" placeholder="Enter name" [ngModel]>
+    <br>
+    <input type="text" name="email" placeholder="Enter email" [ngModel]>
+    <br>
+    <input type="text" name="password" placeholder="Enter password" [ngModel]>
+    <br>
+    <button>Add new Users</button>
+</form>
 <app-footer></app-footer>

@@ -10,6 +10,10 @@ export class UserdataService {
     users(){
       return this.http.get(this.url)
     }
+    saveusers(data:any)
+    {
+      return this.http.post(this.url,data)
+    }
   }
 
 
