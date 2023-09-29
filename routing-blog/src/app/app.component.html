@@ -1,9 +1,10 @@
 <h1>{{title}}</h1>
-<app-login></app-login>
-<app-signup></app-signup>
-
 <ul>
-    <li routerLink="login">Login</li>
-    <li routerLink="signup">Signup</li>
-    <router-outlet></router-outlet>
+    <li>
+        <a routerLink="Login">Login</a>
+        <br>
+        <a routerLink="list">List</a>
+        <router-outlet></router-outlet>
+    </li>
 </ul>
+

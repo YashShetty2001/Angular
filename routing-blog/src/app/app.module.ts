@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 import {HttpClientModule} from '@angular/common/http'
 import{FormsModule} from '@angular/forms'
-import {UsersModule} from './users/users.module'
+import {AdminModule} from './admin/admin.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +17,8 @@ import {UsersModule} from './users/users.module'
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    UsersModule
+    AdminModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
