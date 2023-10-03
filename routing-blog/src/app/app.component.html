@@ -1,9 +1,23 @@
 <h1>{{title}}</h1>
+<h3>Admin Pages</h3>
 <ul>
-    <li>
-        <a routerLink="Login">Login</a>
+    <li style="font-size: x-large">
+        <a routerLink="admin/Login">Login</a>
         <br>
-        <a routerLink="list">List</a>
+    </li>
+    <li style="font-size: x-large;">
+        <a routerLink="admin/List">List</a>
+        <router-outlet></router-outlet>
+    </li>
+</ul>
+<h3>User Pages</h3>
+<ul>
+    <li style="font-size: x-large">
+        <a routerLink="users/Login">Login</a>
+        <br>
+    </li>
+    <li style="font-size: x-large;">
+        <a routerLink="users/List">List</a>
         <router-outlet></router-outlet>
     </li>
 </ul>
